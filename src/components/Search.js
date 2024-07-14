@@ -17,7 +17,7 @@ const Search = () => {
     }
 
     return (
-    <div className="flex items-center my-4 border-2 rounded-md relative z-50 w-96 bg-white border-neutral-200">
+    <div className="flex items-center my-4 border-2 rounded-md relative z-50 w-96 bg-white border-neutral-200 custom-scrollbar">
         <input 
             type="text" 
             value={input} 
@@ -46,7 +46,7 @@ const Search = () => {
             <SearchIcon className="h-4 w-4 fill-gray-100" />
         </button>
 
-        {input && bestMatches.length > 0 ? <SearchResults results={bestMatches}/> : null}
+        {input && bestMatches.length > 0 ? (<SearchResults results={bestMatches}/>) : null}
 
     </div>
     );
