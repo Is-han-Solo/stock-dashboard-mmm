@@ -9,10 +9,9 @@ function App() {
   const [stockSymbol, setStockSymbol] = useState("FB");
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      {/* <StockContext.Provider value={{stockSymbol, setStockSymbol}}>
+      <StockContext.Provider value={{stockSymbol, setStockSymbol}}>
         <Dashboard />
-      </StockContext.Provider> */}
-        <Dashboard />
+      </StockContext.Provider>
     </ThemeContext.Provider>
   );
 }
